@@ -99,6 +99,14 @@ public class EncounterDomainWrapper implements DomainWrapper {
     public Boolean getVoided() {
         return encounter.getVoided();
     }
+    
+    public User getCreator() {return encounter.getCreator();}
+    
+    public User getChangedBy() {return encounter.getChangedBy();}
+    
+    public Date getDateCreated() {return encounter.getDateCreated();}
+    
+    public Date getDateChanged() {return encounter.getDateChanged(); }
 
     public Set<EncounterProvider> getEncounterProviders() {
         return encounter.getEncounterProviders();
